@@ -1,0 +1,2 @@
+# emory
+ Func convert($file)     Local $srch = "¸õΩ•@~µ∫˙√†‰∂ˇî®ßÃĀåḌḤĪïùàḶḸṂṆñìṄṚṜṢŚṬāḍḥīḷḹṃṁṇṅṛṝṣśṭūäÇéüöëò"     Local $repl = "Sns-aamnhntrdtirsnaadhinhmllmnnnnrrsstadhiiimmnnrrsstuasiutnd"      Local $check = FileGetAttrib($file)     If StringInStr($check, "D") Then         ConsoleWrite("Skipping the directory " &amp; $file &amp; @CRLF)         Return     Else         ConsoleWrite("Parsing file: " &amp; $file &amp; @CRLF)     EndIf      ; load file content into memory     $filereader = FileOpen($file)     $content = FileRead($filereader)     FileClose($filereader)
